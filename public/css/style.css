@@ -2,6 +2,9 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+* p {
+  font-size: 17px;
+}
 
 body {
   margin: 0;
@@ -42,8 +45,30 @@ header {
 }
 
 /*Description site*/
-#bloc_description {
+.bloc-description {
+  height: 270px;
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  text-align: center;
+}
+.bloc-description_titre {
+  margin: 35px 0 10px 0;
+}
+.bloc-description_p {
+  color: #5D5A5A;
+  margin-top: 0;
+}
+.bloc-description_boutton {
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, 42%, #9356DC);
+  padding: 0 10px 0 10px;
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  box-shadow: 0 7px 7px lightgray;
 }
 
 /*# sourceMappingURL=style.css.map */
