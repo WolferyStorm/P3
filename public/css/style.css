@@ -71,4 +71,11 @@ header {
   box-shadow: 0 7px 7px lightgray;
 }
 
+/*Fonctionnement du site*/
+.bloc-fonction {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=style.css.map */

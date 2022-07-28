@@ -1,3 +1,4 @@
+@import "./utils/variables";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 *{
     font-family: 'Roboto',sans-serif;
@@ -5,9 +6,6 @@
         font-size: 17px;
     }
 }
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
 body {
     margin: 0;
    }
@@ -66,4 +64,10 @@ header{
         padding:16px;
         box-shadow: 0 7px 7px lightgray;
     }
+}
+/*Fonctionnement du site*/
+.bloc-fonction{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
 }
