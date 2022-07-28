@@ -76,6 +76,40 @@ header {
   height: 400px;
   display: flex;
   flex-direction: column;
+  padding: 25px 25px;
+}
+.bloc-fonction_carte {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.bloc-fonction_carte_span {
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  left: -15px;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.bloc-fonction_carte_p {
+  height: 70px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 17px;
+  font-weight: bold;
+  box-shadow: 0 7px 7px lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloc-fonction_carte_p_icon {
+  color: gray;
+  display: flex;
+  position: absolute;
+  left: 35px;
+}
+.bloc-fonction_carte_p:hover {
+  background-color: #EAD1F6;
 }
 
 /*# sourceMappingURL=style.css.map */

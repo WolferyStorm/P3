@@ -1,73 +1,7 @@
 @import "./utils/variables";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
-*{
-    font-family: 'Roboto',sans-serif;
-    p{
-        font-size: 17px;
-    }
-}
-body {
-    margin: 0;
-   }
-/*Le header*/
-header{
-    height: 60px;
-}
-.header_logo{
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 0 15px gray;
-}
-.logo{
-    height:30px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-/*Localisation*/
-.localisation{
-    height:40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e8e8e8;
-    &_icon--color{
-        color: #5D5A5A;
-    }
-    &_text{
-        margin: 0 30px 0 20px;
-        font-weight: bold;
-        color: #5D5A5A;
-    }
-}
-/*Description site*/
-.bloc-description{
-    height:270px;
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px 0 20px;
-    text-align: center;
-    &_titre{
-        margin: 35px 0 10px 0;
-    }
-    &_p{
-        color: #5D5A5A;
-        margin-top: 0;
-    }
-    &_boutton{
-        border-radius: 30px;
-        background: linear-gradient($color-secondary,42%,$color-primary);
-        padding: 0 10px 0 10px;
-        color: white;
-        text-decoration: none;
-        padding:16px;
-        box-shadow: 0 7px 7px lightgray;
-    }
-}
-/*Fonctionnement du site*/
-.bloc-fonction{
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-}
+@import "./base/mise-en-page";
+@import "./pages/bloc-accueil";
+
+
+
