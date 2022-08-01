@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", sans-serif;
@@ -8,6 +9,10 @@
 
 body {
   margin: 0;
+}
+
+h3 {
+  margin-bottom: 0;
 }
 
 /*Le header*/
@@ -76,12 +81,13 @@ header {
   height: 400px;
   display: flex;
   flex-direction: column;
-  padding: 25px 25px;
+  padding: 20px;
 }
 .bloc-fonction_carte {
   display: flex;
   align-items: center;
   position: relative;
+  margin: 0 15px;
 }
 .bloc-fonction_carte_span {
   background-color: #9356DC;
@@ -110,6 +116,72 @@ header {
 }
 .bloc-fonction_carte_p:hover {
   background-color: #EAD1F6;
+}
+
+/*Section contenant les liens pour les différent restaurants*/
+.bloc-lien {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.bloc-lien_a {
+  display: block;
+  height: 295px;
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+  box-shadow: 0 7px 7px lightgray;
+  position: relative;
+}
+.bloc-lien_a_img {
+  height: 220px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 100%;
+  object-fit: cover;
+}
+.bloc-lien_a_new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #99E2D0;
+  color: green;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 3px;
+  margin: 0;
+}
+.bloc-lien_a_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+}
+.bloc-lien_a_info p {
+  margin: 5px 0;
+}
+.bloc-lien_a_info h3 {
+  margin-top: 10px;
+}
+.bloc-lien_a_info_icon {
+  font-size: 25px;
+  position: absolute;
+  align-self: center;
+  right: 20px;
+}
+.bloc-lien_a_info_icon_full {
+  font-size: 25px;
+  position: absolute;
+  align-self: center;
+  right: 20px;
+  color: red;
+  opacity: 0;
+}
+.bloc-lien_a_info_icon_full:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
