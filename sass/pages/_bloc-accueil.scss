@@ -111,6 +111,11 @@ header{
         margin-bottom: 20px;
         box-shadow: 0 7px 7px lightgray;
         position: relative;
+        transition: all,400ms;
+        &:hover{
+            box-shadow: 0 0 7px $color-primary;
+            transform: scale(1.1);
+        }
         &_img{
             height: 220px;
             border-top-right-radius: 20px;
@@ -152,12 +157,27 @@ header{
                 position: absolute;
                 align-self: center;
                 right: 20px;
-                color:red;
+                background: -webkit-linear-gradient(bottom,$color-secondary,$color-primary);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 opacity: 0;
+                transition: all,400ms;
                 &:hover{
                     opacity: 1;
+                    transform: scale(1.1);
                 }
             }
         }
+    }
+}
+@media screen and (min-width:992px){
+    .bloc-lien_resto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .bloc-lien_a{
+        width: 40%;
     }
 }

@@ -1,0 +1,26 @@
+/*Bas de page contenant des informations utiles*/
+footer{
+    background-color: #353535;
+    padding: 19px;
+    h3{
+        margin: 0 0 10px 0;
+        font-family: 'Shrikhand',sans-serif;
+        color: white;
+        font-size: 20px;
+    }
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    &_bloc{
+        margin: 8px 0;
+        &_liens{
+            color: white;
+            text-decoration: none;
+            i{
+                padding-right: 13px;
+                width: 5%;
+            }
+        }
+    }
+}
