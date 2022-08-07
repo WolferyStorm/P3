@@ -62,12 +62,19 @@
                 &_p{
                     display: flex;
                     justify-content: space-between;
-                    p{
+                    &_text{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                         margin: 7px 0 0 0;
+                        font-size: 14px;
+                        color: #5D5A5A;
                     }
-                }
-                &_prix{
-                    font-weight: bold;
+                    &_prix{
+                        font-weight: bold; 
+                        margin-right: 20px;
+                        margin: 7px 14px 0 14px;                  
+                    }
                 }
             }
         }

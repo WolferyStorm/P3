@@ -82,11 +82,18 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-.menu_bloc_plat_descrition_p p {
+.menu_bloc_plat_descrition_p_text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 7px 0 0 0;
+  font-size: 14px;
+  color: #5D5A5A;
 }
-.menu_bloc_plat_descrition_prix {
+.menu_bloc_plat_descrition_p_prix {
   font-weight: bold;
+  margin-right: 20px;
+  margin: 7px 14px 0 14px;
 }
 
 /*Bouton commander*/
