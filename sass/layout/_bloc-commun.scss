@@ -21,7 +21,6 @@
 }
 /*Parti avec les plat*/
 .menu{
-    height: auto;
     background-color: #f2f2f2;
     position: relative;
     margin-top: -40px;
@@ -74,6 +73,24 @@
         }
     }
 }
+/*Bouton commander*/
+.commander {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    &_style{
+      border-radius: 30px;
+      background: linear-gradient(#FF79DA, 42%, #9356DC);
+      padding: 0 10px 0 10px;
+      color: white;
+      text-decoration: none;
+      padding: 16px;
+      box-shadow: 0 7px 7px lightgray;
+      display: flex;
+      justify-content: center;
+      width: 45%;
+    }
+  }
 
 /*Bas de page contenant des informations utiles*/
 footer{
