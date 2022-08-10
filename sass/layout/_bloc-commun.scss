@@ -39,6 +39,23 @@
         top: 30px;
         font-size: 25px;
     }
+    &_heart-full{
+        font-size: 25px;
+        position: absolute;
+        align-self: center;
+        right: 20px;
+        top:30px;
+        background: -webkit-linear-gradient(bottom,$color-secondary,$color-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all,400ms;
+        &:hover{
+        opacity: 1;
+        transform: scale(1.1);
+        }
+    }
     &_bloc{
         margin: 10px 20px;
         &_plat{
@@ -51,31 +68,54 @@
                 padding-bottom: 7px;
             }
             &_descrition{
+                display: flex;
                 box-shadow: 0 4px 10px lightgray;
-                h3{
-                    margin: 0;
-                }
-                padding: 10px;
                 margin: 20px 0 0 0;
                 border-radius: 15px;
                 background-color: white;
-                &_p{
-                    display: flex;
-                    justify-content: space-between;
-                    &_text{
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        margin: 7px 0 0 0;
-                        font-size: 14px;
-                        color: #5D5A5A;
-                    }
-                    &_prix{
-                        font-weight: bold; 
-                        margin-right: 20px;
-                        margin: 7px 14px 0 14px;                  
+                overflow: hidden;
+                h3{
+                    margin: 0;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                &_container{
+                    padding: 10px;
+                    width: 100%;
+                    overflow: hidden;
+                    &_p{
+                        display: flex;
+                        justify-content: space-between;
+                        &_text{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            margin: 7px 0 0 0;
+                            font-size: 15px;
+                            color: #5D5A5A;
+                        }
+                        &_prix{
+                            font-weight: bold; 
+                            margin-right: 20px;
+                            margin: 7px 14px 0 14px;                  
+                        }
+    
                     }
                 }
+                &_check{
+                    align-self: center;
+                    &_icon{
+                        color:white;
+                        background-color: $color-tertiary;
+                        font-size: 25px;
+                        padding: 25px;
+                        margin-right: -75px;
+                    }
+                }
+            &:hover .menu_bloc_plat_descrition_check_icon{
+                margin-right: 0;
+            }
             }
         }
     }

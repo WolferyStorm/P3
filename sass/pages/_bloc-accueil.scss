@@ -83,17 +83,28 @@ header{
             display: flex;
             align-items: center;
             justify-content: center;
+            &--color{
+                height: 70px;
+                width: 100%;
+                background-color: #f5edff;
+                border-radius: 17px;
+                font-weight: bold;
+                box-shadow: 0 7px 7px lightgray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             &_icon{
                 color: gray;
-                display: flex;
                 position: absolute;
                 left: 35px;
+                &--color{
+                    color: $color-primary;
+                    position: absolute;
+                    left: 35px;
+                }   
             }
-        
-        }
-        &_p:hover{
-            background-color: #EAD1F6;
-        }
+        }    
     }
 }
 /*Section contenant les liens pour les différent restaurants*/
@@ -179,5 +190,34 @@ header{
     }
     .bloc-lien_a{
         width: 40%;
+    }
+    .bloc-fonction{
+        height: 230px;
+    }
+    .container_carte{
+        display: flex;
+    }
+    .bloc-fonction_carte{
+        width: 31%;
+    }
+    h2{
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+    .infos_bloc_liens i{
+        width: auto;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    h2{
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+    .infos_bloc_liens i{
+        width: auto;
     }
 }

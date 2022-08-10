@@ -57,6 +57,23 @@ h3 {
   top: 30px;
   font-size: 25px;
 }
+.menu_heart-full {
+  font-size: 25px;
+  position: absolute;
+  align-self: center;
+  right: 20px;
+  top: 30px;
+  background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: all, 400ms;
+}
+.menu_heart-full:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
 .menu_bloc {
   margin: 10px 20px;
 }
@@ -69,31 +86,53 @@ h3 {
   padding-bottom: 7px;
 }
 .menu_bloc_plat_descrition {
+  display: flex;
   box-shadow: 0 4px 10px lightgray;
-  padding: 10px;
   margin: 20px 0 0 0;
   border-radius: 15px;
   background-color: white;
+  overflow: hidden;
 }
 .menu_bloc_plat_descrition h3 {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu_bloc_plat_descrition_p {
+.menu_bloc_plat_descrition_container {
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+.menu_bloc_plat_descrition_container_p {
   display: flex;
   justify-content: space-between;
 }
-.menu_bloc_plat_descrition_p_text {
+.menu_bloc_plat_descrition_container_p_text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 7px 0 0 0;
-  font-size: 14px;
+  font-size: 15px;
   color: #5D5A5A;
 }
-.menu_bloc_plat_descrition_p_prix {
+.menu_bloc_plat_descrition_container_p_prix {
   font-weight: bold;
   margin-right: 20px;
   margin: 7px 14px 0 14px;
+}
+.menu_bloc_plat_descrition_check {
+  align-self: center;
+}
+.menu_bloc_plat_descrition_check_icon {
+  color: white;
+  background-color: #99E2D0;
+  font-size: 25px;
+  padding: 25px;
+  margin-right: -75px;
+}
+.menu_bloc_plat_descrition:hover .menu_bloc_plat_descrition_check_icon {
+  margin-right: 0;
 }
 
 /*Bouton commander*/
@@ -236,14 +275,26 @@ header {
   align-items: center;
   justify-content: center;
 }
+.bloc-fonction_carte_p--color {
+  height: 70px;
+  width: 100%;
+  background-color: #f5edff;
+  border-radius: 17px;
+  font-weight: bold;
+  box-shadow: 0 7px 7px lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .bloc-fonction_carte_p_icon {
   color: gray;
-  display: flex;
   position: absolute;
   left: 35px;
 }
-.bloc-fonction_carte_p:hover {
-  background-color: #EAD1F6;
+.bloc-fonction_carte_p_icon--color {
+  color: #9356DC;
+  position: absolute;
+  left: 35px;
 }
 
 /*Section contenant les liens pour les différent restaurants*/
@@ -330,6 +381,35 @@ header {
   }
   .bloc-lien_a {
     width: 40%;
+  }
+  .bloc-fonction {
+    height: 230px;
+  }
+  .container_carte {
+    display: flex;
+  }
+  .bloc-fonction_carte {
+    width: 31%;
+  }
+  h2 {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  .infos_bloc_liens i {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  h2 {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  .infos_bloc_liens i {
+    width: auto;
   }
 }
 
