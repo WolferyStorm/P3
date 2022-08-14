@@ -2,12 +2,13 @@
 .header_2{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    position: relative;
     &_flèche{
         font-size: 22px;
         color: #5D5A5A;
-        margin-right: 13%;
-        margin-left: 10%;
+        position: absolute;
+        left: 20px;
     }
 }
 /*Bannière des pages*/
@@ -74,6 +75,7 @@
                 border-radius: 15px;
                 background-color: white;
                 overflow: hidden;
+                animation:show 1s;
                 h3{
                     margin: 0;
                     white-space: nowrap;
@@ -84,7 +86,7 @@
                     padding: 10px;
                     width: 100%;
                     overflow: hidden;
-                    &_p{
+                        &_p{
                         display: flex;
                         justify-content: space-between;
                         &_text{
@@ -105,6 +107,8 @@
                 }
                 &_check{
                     align-self: center;
+                    background-color: $color-tertiary;
+                    overflow: hidden;
                     &_icon{
                         color:white;
                         background-color: $color-tertiary;
@@ -114,7 +118,9 @@
                     }
                 }
             &:hover .menu_bloc_plat_descrition_check_icon{
-                margin-right: 0;
+                margin-right: 37px;
+                transition: all 400ms ;
+                transform: rotate(1turn);
             }
             }
         }
