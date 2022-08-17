@@ -18,9 +18,11 @@ h3 {
 @keyframes show {
   0% {
     transform: scale(0);
+    opacity: 0;
   }
   100% {
     transform: scale(1);
+    opacity: 1;
   }
 }
 /* header pour les pages restaurants*/
@@ -95,13 +97,26 @@ h3 {
   padding-bottom: 7px;
 }
 .menu_bloc_plat_descrition {
+  opacity: 0;
   display: flex;
   box-shadow: 0 4px 10px lightgray;
   margin: 20px 0 0 0;
   border-radius: 15px;
   background-color: white;
   overflow: hidden;
-  animation: show 1s;
+  animation: show 1s forwards;
+}
+.menu_bloc_plat_descrition:nth-child(1n) {
+  animation-delay: 0.2s;
+}
+.menu_bloc_plat_descrition:nth-child(2n) {
+  animation-delay: 0.4s;
+}
+.menu_bloc_plat_descrition:nth-child(3n) {
+  animation-delay: 0.6s;
+}
+.menu_bloc_plat_descrition:nth-child(4n) {
+  animation-delay: 0.8s;
 }
 .menu_bloc_plat_descrition h3 {
   margin: 0;

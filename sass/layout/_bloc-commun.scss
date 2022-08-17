@@ -69,13 +69,19 @@
                 padding-bottom: 7px;
             }
             &_descrition{
+                opacity: 0;
                 display: flex;
                 box-shadow: 0 4px 10px lightgray;
                 margin: 20px 0 0 0;
                 border-radius: 15px;
                 background-color: white;
                 overflow: hidden;
-                animation:show 1s;
+                animation: show 1s forwards;
+                @for $i from 1 through 4 {
+                    &:nth-child(#{$i}n) {
+                        animation-delay: #{$i * 0.2}s;
+                    }
+                }
                 h3{
                     margin: 0;
                     white-space: nowrap;
