@@ -77,7 +77,7 @@
                 background-color: white;
                 overflow: hidden;
                 animation: show 1s forwards;
-                @for $i from 1 through 4 {
+                @for $i from 1 through 5 {
                     &:nth-child(#{$i}n) {
                         animation-delay: #{$i * 0.2}s;
                     }
@@ -175,5 +175,25 @@ footer{
                 width: 5%;
             }
         }
+    }
+}
+@media screen and (min-width:992px){
+    .menu_bloc{
+        display: flex;
+        justify-content: space-between;
+        &_plat{
+            width: 30%;
+        }
+    }
+    .bannière_img {
+        height: 500px;
+      }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    h1{
+        text-align: center;
+    }
+    .menu_bloc_plat h2{
+        width: 5%;
     }
 }

@@ -9,3 +9,17 @@
         opacity: 1;
     }
 }
+@keyframes flash {
+    0% {
+        color: $color-primary;
+        text-shadow: 0 0 7px $color-secondary;
+    }
+    90% {
+        color: $color-primary;
+        text-shadow: none;
+    }
+    100% {
+        color: $color-primary;
+        text-shadow: 0 0 7px $color-secondary;
+    }
+}
