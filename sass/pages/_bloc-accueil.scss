@@ -1,13 +1,13 @@
 /*Chargement page*/
-/*.chargement{
+.chargement{
     position: fixed;
-    z-index: 1;
     height: 100%;
     width: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: page 3000ms forwards;
     &_style{
         color: $color-primary;
         font-size: 80px;
@@ -15,7 +15,7 @@
         text-shadow: 0 2px $color-secondary;
         animation: flash 1.2s linear infinite;
     }
-}*/
+}
 /*Le header*/
 header{
     height: 60px;

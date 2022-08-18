@@ -17,11 +17,11 @@ h3 {
 
 @keyframes show {
   0% {
-    transform: scale(0);
+    transform: translateY(50%);
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -37,6 +37,17 @@ h3 {
   100% {
     color: #9356DC;
     text-shadow: 0 0 7px #FF79DA;
+  }
+}
+@keyframes page {
+  from {
+    opacity: 1;
+    transform: translateY(-50px);
+    z-index: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
   }
 }
 /* header pour les pages restaurants*/
@@ -111,29 +122,13 @@ h3 {
   padding-bottom: 7px;
 }
 .menu_bloc_plat_descrition {
-  opacity: 0;
   display: flex;
   box-shadow: 0 4px 10px lightgray;
   margin: 20px 0 0 0;
   border-radius: 15px;
   background-color: white;
   overflow: hidden;
-  animation: show 1s forwards;
-}
-.menu_bloc_plat_descrition:nth-child(1n) {
-  animation-delay: 0.2s;
-}
-.menu_bloc_plat_descrition:nth-child(2n) {
-  animation-delay: 0.4s;
-}
-.menu_bloc_plat_descrition:nth-child(3n) {
-  animation-delay: 0.6s;
-}
-.menu_bloc_plat_descrition:nth-child(4n) {
-  animation-delay: 0.8s;
-}
-.menu_bloc_plat_descrition:nth-child(5n) {
-  animation-delay: 1s;
+  animation: show 2000ms forwards;
 }
 .menu_bloc_plat_descrition h3 {
   margin: 0;
@@ -179,6 +174,18 @@ h3 {
   margin-right: 37px;
   transition: all 400ms;
   transform: rotate(1turn);
+}
+
+#entrees {
+  animation: show 400ms forwards;
+}
+
+#plats {
+  animation: show 1400ms forwards;
+}
+
+#desserts {
+  animation: show 2400ms forwards;
 }
 
 /*Bouton commander*/
@@ -236,6 +243,9 @@ footer h3 {
   .menu_bloc_plat {
     width: 30%;
   }
+  h1 {
+    text-align: center;
+  }
   .bannière_img {
     height: 500px;
   }
@@ -249,23 +259,24 @@ footer h3 {
   }
 }
 /*Chargement page*/
-/*.chargement{
-    position: fixed;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &_style{
-        color: $color-primary;
-        font-size: 80px;
-        font-weight: bolder;
-        text-shadow: 0 2px $color-secondary;
-        animation: flash 1.2s linear infinite;
-    }
-}*/
+.chargement {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: page 3000ms forwards;
+}
+.chargement_style {
+  color: #9356DC;
+  font-size: 80px;
+  font-weight: bolder;
+  text-shadow: 0 2px #FF79DA;
+  animation: flash 1.2s linear infinite;
+}
+
 /*Le header*/
 header {
   height: 60px;

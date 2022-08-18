@@ -69,19 +69,13 @@
                 padding-bottom: 7px;
             }
             &_descrition{
-                opacity: 0;
                 display: flex;
                 box-shadow: 0 4px 10px lightgray;
                 margin: 20px 0 0 0;
                 border-radius: 15px;
                 background-color: white;
                 overflow: hidden;
-                animation: show 1s forwards;
-                @for $i from 1 through 5 {
-                    &:nth-child(#{$i}n) {
-                        animation-delay: #{$i * 0.2}s;
-                    }
-                }
+                animation: show 2000ms forwards;
                 h3{
                     margin: 0;
                     white-space: nowrap;
@@ -131,6 +125,15 @@
             }
         }
     }
+}
+#entrees{
+    animation: show 400ms forwards;
+}
+#plats{
+    animation: show 1400ms forwards;
+}
+#desserts{
+    animation: show 2400ms forwards;
 }
 /*Bouton commander*/
 .commander {
@@ -184,6 +187,9 @@ footer{
         &_plat{
             width: 30%;
         }
+    }
+    h1{
+        text-align: center;
     }
     .bannière_img {
         height: 500px;
